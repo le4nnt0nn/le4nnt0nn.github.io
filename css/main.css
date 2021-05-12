@@ -34,6 +34,10 @@
     margin-right: 50px;
 }
 
+.topbar_item:hover {
+    transform: scale(1.1);
+}
+
 .topbar_item a {
     width: 100px;
     text-decoration: none;
