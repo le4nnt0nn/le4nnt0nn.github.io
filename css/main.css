@@ -19,6 +19,10 @@
     cursor:pointer;
 }
 
+.topbar_root img:hover{
+    transform: scale(1.1);
+}
+
 .topbar_root .items {
     display: flex;
     position: relative;
