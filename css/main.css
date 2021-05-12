@@ -53,6 +53,7 @@
     height: auto;
     margin: auto;
     text-align: center;
+    position: relative;
 }
 
 .center h1 {
@@ -85,13 +86,15 @@
 }
 
 .center_background {
-    width: 800;
-    height: auto;
-    margin: auto;
+    position: relative;
 }
 
 .center_background img {
     max-width: 100%;  
     height: auto;
+    position: relative;
+}
+
+.center_background #background {
     opacity: 0.5;
 }
