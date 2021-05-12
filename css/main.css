@@ -84,6 +84,13 @@
     margin-top: 30px;
 }
 
+.center #avatar:hover {
+    -moz-box-shadow: 0 0 10px rgb(0, 0, 0);
+    -webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    transition-duration: 0.5s;
+}
+
 .center_background {
     position: relative;
 }
