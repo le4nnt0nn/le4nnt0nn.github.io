@@ -93,12 +93,15 @@
 
 .center_background {
     position: relative;
+    height: auto;
+    width: auto;
+    margin-top: 30px;
+    position: relative;
 }
 
 .center_background img {
     max-width: 100%;  
     height: auto;
-    margin-top: 30px;
     position: relative;
 }
 
