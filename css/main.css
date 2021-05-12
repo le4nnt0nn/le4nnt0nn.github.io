@@ -83,3 +83,15 @@
     border-radius: 50%;
     margin-top: 30px;
 }
+
+.center_background {
+    width: 800;
+    height: auto;
+    margin: auto;
+}
+
+.center_background img {
+    max-width: 100%;  
+    height: auto;
+    opacity: 0.5;
+}
