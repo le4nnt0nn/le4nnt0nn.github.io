@@ -17,6 +17,7 @@
 
 .topbar_root img {
     cursor:pointer;
+    margin-right: 50px;
 }
 
 .topbar_root img:hover{
