@@ -219,7 +219,7 @@ footer {
 @media screen and (max-width: 1000px) {
     .topbar_root {
         flex-direction: column;
-        margin-left: 20px;
+        margin-left: 30px;
     }
     .topbar_root img{
         margin: 20px;
