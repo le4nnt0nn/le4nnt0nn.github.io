@@ -15,7 +15,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 132px;
+    padding: 0 150px;
+}
+
+.topbar_item #icons {
+  justify-content: center;
+  position: relative;
+  align-items: center;
 }
 
 .topbar_root img {
@@ -219,8 +225,11 @@ footer {
 @media screen and (max-width: 1000px) {
     .topbar_root {
         flex-direction: column;
-        margin-left: 30px;
+        margin-left: 10px;
     }
+    .topbar_root #icons{
+      margin-left: 30px;
+  }
     .topbar_root img{
         margin: 20px;
     }
@@ -232,9 +241,3 @@ footer {
     }
 }
 
-@media only screen and (max-width: 400px) {
-  .topbar_root {
-    flex-direction: column;
-    margin-left: 40px;
-  } 
-}
