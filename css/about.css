@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+
+* {
+    font-family: 'Recursive', sans-serif;
+    font-weight: bold;
+    background-color: #5c5c5c;
+    margin: 0;
+    padding: 0;
+}
