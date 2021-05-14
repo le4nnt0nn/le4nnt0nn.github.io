@@ -26,3 +26,36 @@
     font-size: 22px;
     font-weight: lighter;
 }
+
+.bio #about_animated {
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.bio h1{
+    color: #000000;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer
+  }
+  h1 span{
+    transition: .5s linear
+  }
+  h1:hover span:nth-child(1){
+    margin-right: 5px
+  }
+  h1:hover span:nth-child(1):after{
+    content: "";
+  }
+  h1:hover span:nth-child(2){
+    margin-left: 30px
+  }
+  h1:hover span{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+  }
