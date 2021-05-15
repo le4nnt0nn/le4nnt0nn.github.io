@@ -1,0 +1,37 @@
+.information_root {
+    margin-top: 150px;
+    margin-bottom: 250px;
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards_content {
+    margin: 80px auto;
+    background-color: transparent;
+}
+
+.card {
+    margin: 0 auto;
+    align-items: center;
+    width: 300px;
+    height: auto;  
+    background: #121213;
+    color: #FFFFFF;
+    border-radius: 25px;
+    box-shadow: 0px 7px 7px rgba(36, 35, 35, 0.521);
+    padding: 5px 19px;
+}
+
+.card h3 {
+    background-color: transparent;
+    font-size: 25px;
+}
+
+.card p {
+    background-color: transparent;
+    margin-top: 10px;
+    font-size: 20px;
+}
