@@ -106,3 +106,7 @@
     border-radius: 25px;
     margin-bottom: 20px;
 }
+
+.card #flagIcon {
+    margin-top: 10px;
+}
