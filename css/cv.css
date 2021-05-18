@@ -110,3 +110,8 @@
 .card #flagIcon {
     margin-top: 10px;
 }
+.card #mtcnaLogo {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+}
