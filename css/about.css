@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rambla:wght@700&display=swap');
 
 * {
-    font-family: 'Recursive', sans-serif;
+    font-family: 'Rambla', sans-serif;
     font-weight: bold;
-    background-color: #5c5c5c;
+    background: linear-gradient(90deg, #232526 0%, #414345 100%) fixed no-repeat;
     margin: 0;
     padding: 0;
 }
@@ -12,7 +12,7 @@
     margin: 0 auto;
     width: 70%;
     height: auto;
-    color: #000000;
+    color: #A5A5A5;
     text-align: center;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .bio h1{
-    color: #000000;
+    color: #FFDF8E;
     font-size: 50px;
     font-weight: bold;
     font-family: monospace;
@@ -59,3 +59,85 @@
                  0 0 20px #fff, 
                  0 0 40px #fff;
   }
+
+.info-career {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.info-career h2 {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #FFDF8E;
+}
+
+.card {
+  align-items: center;
+  width: 400px;
+  height: auto;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 10px;
+  background: #A5A5A5;
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 7px 7px rgba(36, 35, 35, 0.521);
+}
+
+#ada-logo {
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background: #fff;
+  width: 200px;
+  height: 80px;
+}
+
+.card p {
+  font-size: 30px;
+  background: transparent;
+  color: #414345;
+  text-align: center;
+}
+
+.card .duration_time {
+  color: #232526;
+}
+
+.card #cambridge-logo {
+  width: 80px;
+  height: 100px;
+  margin-bottom: 30px;
+  background: transparent;
+}
+
+.card #mtcna-logo {
+  width: 200px;
+  height: 200px;
+  margin: 0 0 -30px;
+  background: transparent;
+}
+
+.card #see-more {
+  margin: 20px;
+  font-size: 20px;
+  color: #232526;
+}
+
+.card #see-more a{
+  color: #f0ca6a;
+  font-weight: bold;
+  text-decoration: none;
+  background: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 300px;
+  }
+}
+
+

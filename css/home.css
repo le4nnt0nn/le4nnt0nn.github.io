@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rambla:wght@700&display=swap');
 
 * {
-    font-family: 'Recursive', sans-serif;
+    font-family: 'Rambla', sans-serif;
     font-weight: bold;
-    background-color: #5c5c5c;
+    background: linear-gradient(90deg, #232526 0%, #414345 100%) fixed no-repeat;
     margin: 0;
     padding: 0;
 }
@@ -18,7 +18,7 @@
     padding: 0 150px;
 }
 
-.topbar_item #icons {
+.topbar_item .icons {
   justify-content: center;
   position: relative;
   align-items: center;
@@ -51,18 +51,21 @@
 .topbar_item a {
     width: 100px;
     text-decoration: none;
-    color: #000000;
-    font-size: 16px;
+    color: #A5A5A5;
+    font-size: 18px;
     font-weight: 600;
     line-height: 27px;
     text-align: center;
 }
 
 .center {
+    color: #A5A5A5;
     width: 800;
     height: auto;
     margin: auto;
     text-align: center;
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s;
 }
 
 .center h1 {
@@ -71,6 +74,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: 66px;
+}
+
+.center #antonio {
+    color:#FFDF8E;
 }
 
 .center h2 {
@@ -88,34 +95,16 @@
     line-height: 20px;
 }
 
-.center #avatar{
+.center #avatar {
     margin: 0 auto;
-    border-radius: 50%;
+    border-radius: 30%;
     margin-top: 30px;
     max-width: 100%;
     height: auto;
-
-}
-
-.center #avatar:hover {
-    -moz-box-shadow: 0 0 10px rgb(0, 0, 0);
-    -webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
-    box-shadow: 0 0 10px rgb(0, 0, 0);
-    transition-duration: 0.5s;
-}
-
-.center_background {
-    position: relative;
-    height: auto;
-    width: auto;
-    margin-top: 100px;
-}
-
-.center_background #background {
-    max-width: 100%;
-    height: auto;
-    opacity: 0.5;
-    max-width: 100%;
+    border: calc(8px + 0.2vw) solid transparent;
+    background: linear-gradient(90deg, #C4C4C4 -38.87%, #FFDF8E -38.85%, #A5A5A5 94.12%);
+	box-sizing: border-box;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .footer_group {
@@ -126,7 +115,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #000000;
+    color: #A5A5A5;
     padding: 100px 0;
 }
 
@@ -151,43 +140,40 @@ footer {
     margin-top: -100px;
     overflow:visible;
   }
+
+  .topball {
+    animation: ball 1.5s ease-in-out;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-delay: 0.3s;
+    cursor:pointer;
+  }
   
   .wave {
     animation: wave 3s linear;
     animation-iteration-count:infinite;
-    fill: #424141;
+    fill: #FFDF8E;
   }
   .drop {
-    fill: var(--col-deepblue);
-    xfill: #99000055;
-    animation: drop 3.2s linear infinite normal;
-    stroke: var(--col-deepblue);
+    fill: transparent;
+    animation: drop 5s ease infinite normal;
+    stroke: #A5A5A5;
     stroke-width:0.5;
-    transform: translateY(25px) ;
-    transform-box: fill-box;
-    transform-origin: 50% 100%;
+    opacity:.6; 
+    transform: translateY(80%);
   }
   .drop1 {
-    
+    transform-origin: 20px 3px;
   }
   .drop2 {
     animation-delay: 3s;
     animation-duration:3s;
+    transform-origin: 25px 3px;
   }
   .drop3 {
     animation-delay: -2s;
     animation-duration:3.4s;
-  }
-  .drop4 {
-    animation-delay: 1.7s;
-  }
-  .drop5 {
-    animation-delay: 2.7s;
-    animation-duration:3.1s;
-  }
-  .drop6 {
-    animation-delay: -2.1s;
-    animation-duration:3.2s;
+    transform-origin: 16px 3px;
   }
   .gooeff {
         filter: url(#goo);
@@ -203,26 +189,32 @@ footer {
   }
   @keyframes drop {
     0% {
-      transform: translateY(25px); 
+      transform: translateY(80%); 
+      opacity:.6; 
     }
-    30% {
-      transform: translateY(-10px) scale(.1);
+    80% {
+      transform: translateY(80%); 
+      opacity:.6; 
     }
-    30.001% {
-      transform: translateY(25px) scale(1); 
-    }
-    70% {
-      transform: translateY(25px); 
+    90% { 
+      transform: translateY(10%) ; 
+      opacity:.6; 
     }
     100% { 
-      transform: translateY(-10px) scale(.1);  
+      transform: translateY(0%) scale(1.5);  
+      stroke-width:0.2;
+      opacity:0; 
     }
   }
   @keyframes wave {
     to {transform: translateX(-100%);}
   }
 
-@media screen and (max-width: 1000px) {
+  @keyframes ball {
+    to {transform: translateY(20%);}
+  }
+
+  @media screen and (max-width: 1000px) {
     .topbar_root {
         flex-direction: column;
         margin-left: 10px;
@@ -240,4 +232,3 @@ footer {
         margin: 20px;
     }
 }
-
