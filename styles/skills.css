@@ -3,14 +3,20 @@ h2 {
     text-align: center;
     color: #FFDF8E;
 }
+body {
+    animation: fadeIn 1s;
+}
+
+/* Cartas */
+
 .card {
-    width: 900px;
+    width: 600px;
     height: auto;
     margin: 50px auto;
     display: flex;
     flex-direction: column;
     padding: 50px 10px;
-    background: #A5A5A5;
+    background: #fff;
     color: #414345;
     border-radius: 30px;
     box-shadow: 0px 7px 7px rgba(36, 35, 35, 0.521);
@@ -34,23 +40,55 @@ h2 {
     background: transparent;
 }
 
+/* Estilo para barras de progreso */
+
 .card .skill_bar {
-    padding: 10px;
+    padding: 15px;
     border-radius: 25px;
     height: 8px;
     margin-top: 10px;
     background: #414345;
 }
 
-.card .progress {
-    height: 8px;
-    background: #ffac12;
+.card .progress_front {
+    height: 5px;
+    background: #f86719;
     border-radius: 25px;
     margin-bottom: 20px;
 }
 
+.card .progress_design {
+    height: 5px;
+    background: #ffb900;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.card .progress_back {
+    height: 5px;
+    background: #f5aaba;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+
+/* Responsive */
+
 @media screen and (max-width: 1000px) {
     .card {
         width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        text-align: center;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card {
+        margin-left: 18px;
     }
 }

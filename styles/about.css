@@ -1,0 +1,348 @@
+body {
+  animation: fadeIn 1s;
+}
+
+/* Biografía */
+.bio {
+  margin: 0 auto;
+  width: 70%;
+  height: auto;
+  color: #fcfcfc;
+  text-align: center;
+}
+
+.bio p {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.bio span {
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+.bio #about_animated {
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Efecto deslumbrante para h1 */
+
+.bio h1 {
+  color: #ffdf8e;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer;
+}
+h1 span {
+  transition: 0.5s linear;
+}
+h1:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+h1:hover span:nth-child(1):after {
+  content: "";
+}
+h1:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+h1:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+/* Cartas e información */
+
+.info-career {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 50px 0;
+  justify-content: space-around;
+}
+
+.info-career h2 {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #ffdf8e;
+}
+
+.card {
+  align-items: center;
+  width: 400px;
+  height: auto;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 10px;
+  background: #ffffff;
+  color: rgb(36, 36, 36);
+  border-radius: 30px;
+  box-shadow: 0px 7px 7px rgba(36, 35, 35, 0.521);
+  transition: 0.5s;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: translateY(-50px);
+  transition: 0.5s;
+}
+
+#itcon-logo {
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background: #fff;
+  width: 200px;
+  height: 100px;
+}
+
+#ada-logo {
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background: #fff;
+  width: 200px;
+  height: 80px;
+}
+
+.card p {
+  font-size: 30px;
+  background: transparent;
+  color: rgb(57, 115, 238);
+  font-weight: bold;
+  text-align: center;
+}
+
+.card .duration_time {
+  color: #232526;
+}
+
+.card #cambridge-logo {
+  width: 80px;
+  height: 100px;
+  margin-bottom: 30px;
+  background: transparent;
+}
+
+.card #mtcna-logo {
+  width: 200px;
+  height: 200px;
+  margin: 0 0 -30px;
+  background: transparent;
+}
+
+.card #see-more {
+  font-weight: 500;
+  margin: 20px;
+  font-size: 20px;
+  color: #232526;
+}
+
+.card #see-more a {
+  font-size: 29px;
+  color: rgb(123, 147, 255);
+  font-weight: bold;
+  text-decoration: none;
+  background: transparent;
+}
+
+#hobbies_content {
+  display: flex;
+  flex-direction: row;
+}
+
+#hobbies_content #c-1 a {
+  color: #1a9ce2;
+}
+
+#hobbies_content #c-2 a {
+  color: #ed3675;
+}
+
+#hobbies_content #c-3 a {
+  color: #ea3041;
+}
+
+#hobbies_content #c-4 a {
+  color: #f2af00;
+}
+
+#hobbies_content .card {
+  width: 300px;
+  padding: 20px;
+}
+
+/* Pop up para hobbies */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 20px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #1a9ce2;;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+.popup .content a{
+  color: #1a9ce2;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+/* Responsive para las cartas */
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 300px;
+  }
+}
+
+/* Portátil */
+
+@media (max-width: 1024px) {
+  #hobbies_content .card {
+    width: 200px;
+    padding: 10px;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  #hobbies_content {
+    display: flex;
+    flex-direction: column;
+  }
+  #hobbies_content .card {
+    width: 200px;
+    
+  }
+}
+
+/* Móvil M */
+
+@media (max-width: 375px) {
+  body {
+    background: rgba(0, 198, 199, 1);
+    /* background: linear-gradient(90deg, rgba(104, 96, 241, 1) 0%, rgba(0, 198, 199, 1) 0%, rgba(3, 179, 221, 1) 100%); */
+  }
+  #content-box h1 span {
+    font-size: 29px;
+  }
+  #content-box h3 {
+    font-size: 19px;
+  }
+  #content-box img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .loading {
+    margin-right: 105px;
+  }
+  .dot {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50px;
+  }
+  .topbar_item a {
+    font-size: 15px;
+  }
+}
+
+/* Móvil L */
+
+@media (max-width: 425px) {
+  #content-box h1 span {
+    font-size: 34px;
+  }
+  #content-box img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .loading {
+    margin-right: 138px;
+  }
+  .dot {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50px;
+  }
+}
+
+/* Móvil S */
+
+@media (max-width: 320px) {
+  .bio {
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    color: #fcfcfc;
+    text-align: center;
+    margin-right: 35px;
+  }
+  .bio #about_animated {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 35px;
+    font-weight: bold;
+  }
+  .info-career {
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 0;
+  }
+}
