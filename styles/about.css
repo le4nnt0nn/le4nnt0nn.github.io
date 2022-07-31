@@ -93,6 +93,11 @@ h1:hover span {
   transition: 0.5s;
 }
 
+.info-career .card-description {
+  font-size: 19px;
+  padding: 10px;
+}
+
 #itcon-logo {
   margin-bottom: 20px;
   border-radius: 20px;
@@ -112,13 +117,14 @@ h1:hover span {
 .card p {
   font-size: 30px;
   background: transparent;
-  color: rgb(57, 115, 238);
+  color: rgba(95, 0, 217, 1);
   font-weight: bold;
   text-align: center;
 }
 
 .card .duration_time {
   color: #232526;
+  font-size: 18px;
 }
 
 .card #cambridge-logo {
