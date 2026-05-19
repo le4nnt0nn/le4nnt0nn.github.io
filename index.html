@@ -4,110 +4,225 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--En Firefox aparece el favicon animado-->
-    <link rel="icon" href="images/animatedA.gif" type="image/gif" >
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    <meta
+      name="description"
+      content="Portfolio of Antonio Cortes, a full-stack developer specialized in .NET, SQL Server, Angular, React, and CRM/ERP systems."
     />
+    <link rel="icon" href="images/animatedA.png" type="image/png" />
     <link rel="stylesheet" href="./styles/home.css" />
-    <title>🏠 | Antonio Cortés</title>
+    <noscript><style>[data-reveal] { opacity: 1; transform: none; }</style></noscript>
+    <script src="./scripts/home.js" defer></script>
+    <title>Antonio Cortes | Full-stack Developer</title>
   </head>
 
   <body>
-    <!--Contenido-->
-    <div id="content">
-      <!--Topbar-->
-      <nav class="topbar_root">
-        <!--Linkedin Logo-->
-        <div class="icons">
-          <a
-            href="https://www.linkedin.com/in/antonio-cort%C3%A9s-jim%C3%A9nez/"
-          >
-            <img
-              src="./images/linkedin.png"
-              alt="logoLinkAlt"
-              style="width: 50px; height: 50px"
-          /></a>
-          <a href="https://github.com/le4nnt0nn">
-            <img
-              src="./images/github.png"
-              alt="logoGitAlt"
-              style="width: 50px; height: 50px"
-          /></a>
-        </div>
-        <!--Nav items-->
-        <div class="items">
-          <div class="topbar_item"><a href="index.html">Home</a></div>
-          <div class="topbar_item"><a href="./views/about.html">About</a></div>
-          <div class="topbar_item">
-            <a href="./views/skills.html">Skills</a>
-          </div>
-          <div class="topbar_item"><a href="./views/portfolio.html">More</a></div>
-        </div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark">AC</span>
+        <span>Antonio Cortes</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#experience">Experience</a>
+        <a href="#stack">Stack</a>
+        <a href="#impact">Impact</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <header>
-        <div id="content-box">
-          <ul id="balls-group">
-            <li id="ball1" class="ball-touch"></li>
-            <li id="ball2" class="ball-touch"></li>
-            <li id="ball3" class="ball-touch"></li>
-          </ul>
-          <h1>
-            <span>{</span> <span>I´m</span>
-            <span id="content-box-name">Antonio</span> <span>}</span>
-          </h1>
-          <h3>I love coding and learning every day</h3>
-          <img
-            id="profile-photo"
-            src="./images/profile.jpg"
-            style="width: 250px; height: 250px"
-          />
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Full-stack Developer from Seville</p>
+          <h1>I build reliable systems for real business problems.</h1>
+          <p class="hero-text">
+            I develop CRM and ERP solutions, optimize databases, and connect front-end,
+            back-end, and integrations so products feel fast, maintainable, and easy to use.
+          </p>
+
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#contact">Let's talk</a>
+            <a class="button secondary" href="https://github.com/le4nnt0nn">View GitHub</a>
+          </div>
+
+          <dl class="hero-stats" aria-label="Professional summary">
+            <div>
+              <dt>4+</dt>
+              <dd>years building software</dd>
+            </div>
+            <div>
+              <dt>CRM/ERP</dt>
+              <dd>enterprise product focus</dd>
+            </div>
+            <div>
+              <dt>.NET + SQL</dt>
+              <dd>technical core</dd>
+            </div>
+          </dl>
         </div>
-      </header>
-      <!--Footer-->
-      <div class="footer_group">
-        <h4>Antonio Cortés © 2021</h4>
-      </div>
-      <!--Waves Container-->
-      <div>
-        <svg
-          class="waves"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 24 150 28"
-          preserveAspectRatio="none"
-          shape-rendering="auto"
-        >
-          <defs>
-            <path
-              id="gentle-wave"
-              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-            />
-          </defs>
-          <g class="parallax">
-            <use
-              xlink:href="#gentle-wave"
-              x="48"
-              y="0"
-              fill="rgba(255,255,255,0.7"
-            />
-            <use
-              xlink:href="#gentle-wave"
-              x="48"
-              y="3"
-              fill="rgba(255,255,255,0.5)"
-            />
-            <use
-              xlink:href="#gentle-wave"
-              x="48"
-              y="5"
-              fill="rgba(255,255,255,0.3)"
-            />
-            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-          </g>
-        </svg>
-      </div>
-    </div>
+
+        <aside class="profile-panel" aria-label="Professional profile" data-reveal>
+          <img src="./images/profile.jpg" alt="Portrait of Antonio Cortes" />
+          <div class="profile-content">
+            <p class="status-pill">Open to connect</p>
+            <h2>Antonio Cortes Jimenez</h2>
+            <p>
+              Remote .NET Developer focused on performance, data migration, automation,
+              and user experience.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="signal-band" aria-label="Main specialties">
+        <div class="signal-track">
+          <span>C#.NET</span>
+          <span>SQL Server</span>
+          <span>Angular</span>
+          <span>React</span>
+          <span>NodeJS</span>
+          <span>APIs</span>
+          <span>TeamCity</span>
+          <span>Jira</span>
+          <span>Scrum</span>
+          <span>Bitbucket</span>
+        </div>
+      </section>
+
+      <section id="experience" class="section-shell split-section">
+        <div class="section-intro" data-reveal>
+          <p class="eyebrow">Experience</p>
+          <h2>Product mindset: understand, build, maintain, and improve.</h2>
+          <p>
+            I have worked on enterprise platforms where every delivery touches data, processes,
+            users, and performance. That mix made me strong in implementation, technical support,
+            and continuous improvement.
+          </p>
+        </div>
+
+        <div class="timeline" data-reveal>
+          <article class="timeline-item current">
+            <div class="timeline-date">Jan. 2025 - Present</div>
+            <div class="timeline-content">
+              <p class="role">.NET Developer</p>
+              <h3>MN program</h3>
+              <p class="meta">La Coruna, remote</p>
+              <ul>
+                <li>Development of CRM & ERP features for sales, invoicing, and key business workflows.</li>
+                <li>Data migration, integration, and management with .NET and SQL Server.</li>
+                <li>Code review, troubleshooting, and performance tuning to improve stability and UX.</li>
+                <li>Front-end development with Angular and API integration for scalable interfaces.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">Nov. 2021 - Jan. 2025</div>
+            <div class="timeline-content">
+              <p class="role">Developer</p>
+              <h3>ITCON Iberia</h3>
+              <p class="meta">Seville, hybrid</p>
+              <ul>
+                <li>Development and customization of CRM systems using the Flexygo platform.</li>
+                <li>JavaScript, SQL, and C# (.NET) processes to automate business operations.</li>
+                <li>Deployments with TeamCity, version control with Git and Bitbucket.</li>
+                <li>Technical support, incident management, and Agile/Scrum tracking with Jira.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="stack" class="stack-section section-shell">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Stack</p>
+          <h2>Technologies I work with</h2>
+        </div>
+
+        <div class="stack-controls" data-reveal aria-label="Filter technologies">
+          <button class="chip active" type="button" data-filter="all">All</button>
+          <button class="chip" type="button" data-filter="backend">Back-end</button>
+          <button class="chip" type="button" data-filter="frontend">Front-end</button>
+          <button class="chip" type="button" data-filter="data">Data</button>
+          <button class="chip" type="button" data-filter="workflow">Workflow</button>
+        </div>
+
+        <div class="skill-grid" data-reveal>
+          <span data-skill="backend">C#</span>
+          <span data-skill="backend">ASP.NET</span>
+          <span data-skill="backend">Entity Framework</span>
+          <span data-skill="backend">NodeJS</span>
+          <span data-skill="backend">RESTful API</span>
+          <span data-skill="frontend">Angular</span>
+          <span data-skill="frontend">ReactJS</span>
+          <span data-skill="frontend">JavaScript</span>
+          <span data-skill="frontend">jQuery</span>
+          <span data-skill="frontend">Bootstrap</span>
+          <span data-skill="frontend">Ionic</span>
+          <span data-skill="data">SQL Server</span>
+          <span data-skill="data">Transact-SQL</span>
+          <span data-skill="data">MySQL</span>
+          <span data-skill="data">SQLite</span>
+          <span data-skill="data">LINQ</span>
+          <span data-skill="workflow">Git</span>
+          <span data-skill="workflow">Bitbucket</span>
+          <span data-skill="workflow">TeamCity</span>
+          <span data-skill="workflow">Jira</span>
+          <span data-skill="workflow">Scrum</span>
+          <span data-skill="workflow">Visual Studio</span>
+        </div>
+      </section>
+
+      <section id="impact" class="section-shell project-section">
+        <div class="section-intro" data-reveal>
+          <p class="eyebrow">How I contribute</p>
+          <h2>More than writing code: solving the full problem.</h2>
+        </div>
+
+        <div class="value-grid">
+          <article data-reveal>
+            <p class="value-index">01</p>
+            <h3>Maintainable architecture</h3>
+            <p>I modularize processes, manage dependencies, and prepare systems to evolve without breaking what already works.</p>
+          </article>
+          <article data-reveal>
+            <p class="value-index">02</p>
+            <h3>Reliable data</h3>
+            <p>I design migrations, stored procedures, and integrations with attention to performance, traceability, and consistency.</p>
+          </article>
+          <article data-reveal>
+            <p class="value-index">03</p>
+            <h3>Usable product</h3>
+            <p>I connect APIs and UI with real users in mind: clear screens, fast responses, and frictionless workflows.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section section-shell" data-reveal>
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>If there is a system to improve, that is where I fit best. :)</h2>
+          <p>
+            I enjoy working on products where quality, performance, and continuous learning
+            actually matter.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:antoniocorjiminfgmail.com">antoniocorjiminfgmail.com</a>
+          <a class="button secondary" href="www.linkedin.com/in/antoniocortesdev">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Antonio Cortes &copy; 2026</p>
+      <a href="#top">Back to top</a>
+    </footer>
   </body>
 </html>
